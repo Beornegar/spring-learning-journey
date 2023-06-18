@@ -21,4 +21,7 @@ public class CustomerService {
 		logger.info("----------------------------");
 	}
 	
+	public void callInternalCustomersService() {
+		internalCustomerService.customers();
+	}
 }

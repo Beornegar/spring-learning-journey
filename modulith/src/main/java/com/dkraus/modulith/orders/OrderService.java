@@ -23,4 +23,8 @@ public class OrderService {
 		logger.info("----------------------------");
 	}
 	
+	public void callInternalOrdersService() {
+		internalorderService.orders();
+	}
+	
 }
