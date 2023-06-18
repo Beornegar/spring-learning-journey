@@ -1,5 +1,7 @@
 package com.dkraus.modulith.orders;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -23,8 +25,8 @@ public class OrderService {
 		logger.info("----------------------------");
 	}
 	
-	public void callInternalOrdersService() {
-		internalorderService.orders();
+	public List<OrderDTO> callInternalOrdersService() {
+		return internalorderService.orders();
 	}
 	
 }
